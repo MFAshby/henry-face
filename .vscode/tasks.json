@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "identifier": "build",
+            "type": "shell",
+            "command": "pebble build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "emulator",
+            "type": "shell",
+            "identifier": "run",
+            "command": "pebble install --emulator aplite",
+            "problemMatcher": []
+        },
+        {
+            "label": "reload",
+            "type": "shell",
+            "identifier": "run",
+            "command": "pebble build && pebble install --emulator aplite",
+            "problemMatcher": []
+        }
+    ]
+}

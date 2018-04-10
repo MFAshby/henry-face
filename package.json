@@ -1,0 +1,35 @@
+{
+  "name": "henry-face",
+  "author": "MakeAwesomeHappen",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "henry-face",
+    "uuid": "95af56ce-3a71-45ab-adb7-fe6ae5b35fdf",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "HENRY",
+          "file": "henry.png"
+        }
+      ]
+    }
+  }
+}
